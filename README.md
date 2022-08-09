@@ -19,3 +19,30 @@ def flatten(x):
 
 flatten(input)
 print(list_new)
+
+
+REVERSE
+
+2- Verilen listenin içindeki elemanları tersine döndüren bir fonksiyon yazın. Eğer listenin içindeki elemanlar da liste içeriyorsa onların elemanlarını da tersine döndürün. Örnek olarak:
+
+input: [[1, 2], [3, 4], [5, 6, 7]]
+
+output: [[[7, 6, 5], [4, 3], [2, 1]]
+
+Önce yeni oluşturduğumuz listeyi ilk listemizin tersi haline getiriyoruz.
+input: [[1, 2], [3, 4], [5, 6, 7]]
+output: [[[5,6,7], [3,4], [1,2]]
+Sonra listenin her bir elemanının içini kontrol edip terse çeviriyoruz.
+output: [[[5,6,7], [3,4], [1,2]]
+output: [[[7, 6, 5], [4, 3], [2, 1]]
+
+
+
+
+new_list=input[::-1]
+
+for i in range(len(new_list)):
+    new_list[i]=new_list[i][::-1]
+print(new_list)
+
+
